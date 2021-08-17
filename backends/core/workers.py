@@ -121,7 +121,7 @@ class Worker(object):
   def execute(self):
     self.log_info('Started with params: %s',
                   json.dumps(self._params, sort_keys=True, indent=2,
-                             separators=(', ', ': ')))
+                             separators=('; ', ': ')))
     try:
       self._execute()
     except ClientError as e:
